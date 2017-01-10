@@ -1,0 +1,26 @@
+{
+    "name": "brightscript",
+    "displayName": "vscode-brightscript",
+    "description": "Brightscript language support",
+    "version": "0.0.1",
+    "publisher": "none",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "brs",
+            "aliases": ["BrightScript", "brs"],
+            "extensions": [".brs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "brs",
+            "scopeName": "source.brightscript",
+            "path": "./syntaxes/brightscript.tmLanguage"
+        }]
+    }
+}
